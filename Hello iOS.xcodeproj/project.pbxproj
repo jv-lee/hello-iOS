@@ -16,6 +16,9 @@
 		1AE0CA7D288A7A8C001AB28C /* Hello_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0CA7C288A7A8C001AB28C /* Hello_iOSTests.swift */; };
 		1AE0CA87288A7A8C001AB28C /* Hello_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0CA86288A7A8C001AB28C /* Hello_iOSUITests.swift */; };
 		1AE0CA89288A7A8C001AB28C /* Hello_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0CA88288A7A8C001AB28C /* Hello_iOSUITestsLaunchTests.swift */; };
+		1AE0CA9D288A7C69001AB28C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0CA9C288A7C69001AB28C /* ImageViewController.swift */; };
+		1AE0CA9F288A7C83001AB28C /* MultipleNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0CA9E288A7C83001AB28C /* MultipleNumberViewController.swift */; };
+		1AE0CAA1288A7CA2001AB28C /* SimpleWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0CAA0288A7CA2001AB28C /* SimpleWidgetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		1AE0CA82288A7A8C001AB28C /* Hello iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE0CA86288A7A8C001AB28C /* Hello_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_iOSUITests.swift; sourceTree = "<group>"; };
 		1AE0CA88288A7A8C001AB28C /* Hello_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1AE0CA9C288A7C69001AB28C /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		1AE0CA9E288A7C83001AB28C /* MultipleNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleNumberViewController.swift; sourceTree = "<group>"; };
+		1AE0CAA0288A7CA2001AB28C /* SimpleWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidgetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		1AE0CA64288A7A89001AB28C /* Hello iOS */ = {
 			isa = PBXGroup;
 			children = (
+				1AE0CA95288A7AEB001AB28C /* view */,
 				1AE0CA65288A7A89001AB28C /* AppDelegate.swift */,
 				1AE0CA67288A7A89001AB28C /* SceneDelegate.swift */,
 				1AE0CA69288A7A89001AB28C /* ViewController.swift */,
@@ -125,6 +132,16 @@
 				1AE0CA88288A7A8C001AB28C /* Hello_iOSUITestsLaunchTests.swift */,
 			);
 			path = "Hello iOSUITests";
+			sourceTree = "<group>";
+		};
+		1AE0CA95288A7AEB001AB28C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1AE0CA9C288A7C69001AB28C /* ImageViewController.swift */,
+				1AE0CA9E288A7C83001AB28C /* MultipleNumberViewController.swift */,
+				1AE0CAA0288A7CA2001AB28C /* SimpleWidgetViewController.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE0CAA1288A7CA2001AB28C /* SimpleWidgetViewController.swift in Sources */,
+				1AE0CA9F288A7C83001AB28C /* MultipleNumberViewController.swift in Sources */,
 				1AE0CA6A288A7A89001AB28C /* ViewController.swift in Sources */,
 				1AE0CA66288A7A89001AB28C /* AppDelegate.swift in Sources */,
+				1AE0CA9D288A7C69001AB28C /* ImageViewController.swift in Sources */,
 				1AE0CA68288A7A89001AB28C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
