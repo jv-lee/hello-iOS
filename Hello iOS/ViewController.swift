@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let pages = ["simpleWidget","multipleNumber","imageView","datePicker","tableView"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,39 +18,38 @@ class ViewController: UIViewController {
     }
     
     func initNavigationView() {
-        let buttonSimpleWidget:UIButton = UIButton(frame: CGRect(x:50,y:100,width: 200,height: 30))
-        buttonSimpleWidget.setTitle("simple widget", for: .normal)
-        buttonSimpleWidget.setTitleColor(.white, for: .normal)
-        buttonSimpleWidget.backgroundColor = .black
-        buttonSimpleWidget.addTarget(self, action: #selector(navigationSimpleWidget), for: .touchUpInside)
-        view.addSubview(buttonSimpleWidget)
-
-        let buttonMultipleNumber:UIButton = UIButton(frame: CGRect(x:50,y:140,width: 200,height: 30))
-        buttonMultipleNumber.setTitle("multiple number", for: .normal)
-        buttonMultipleNumber.setTitleColor(.white, for: .normal)
-        buttonMultipleNumber.backgroundColor = .black
-        buttonMultipleNumber.addTarget(self, action: #selector(navigationMultipleNumber), for: .touchUpInside)
-        view.addSubview(buttonMultipleNumber)
-
-        let buttonImageView:UIButton = UIButton(frame: CGRect(x:50,y:180,width: 200,height: 30))
-        buttonImageView.setTitle("image view", for: .normal)
-        buttonImageView.setTitleColor(.white, for: .normal)
-        buttonImageView.backgroundColor = .black
-        buttonImageView.addTarget(self, action: #selector(navigationImageView), for: .touchUpInside)
-        view.addSubview(buttonImageView)
+        let screenWidth = UIScreen.main.bounds.width
+        let buttonWidth = CGFloat.init(200)
+        let buttonHeight = CGFloat.init(30)
+        let buttonX = (screenWidth / 2) - (buttonWidth / 2)
+        let buttonY = CGFloat.init(50)
+        
+        for index in 0...pages.count-1 {
+            let item = pages[index]
+            
+            let button:UIButton = UIButton(frame: CGRect(x: buttonX,y:buttonY * CGFloat.init(index + 1),width: buttonWidth,height: buttonHeight))
+            button.setTitle(item, for: .normal)
+            button.setTitleColor(.white, for: .normal)
+            button.backgroundColor = .black
+            button.addTarget(self, action: #selector(clickNavigation), for: .touchUpInside)
+            view.addSubview(button)
+        }
     }
     
-    @objc func navigationSimpleWidget(sender:UIButton) {
-        self.navigationController?.show(SimpleWidgetViewController.init(), sender: sender)
+    @objc func clickNavigation(sender:UIButton) {
+        switch sender.currentTitle {
+        case "simpleWidget" :
+            self.navigationController?.show(SimpleWidgetViewController.init(), sender: sender)
+        case "multipleNumber":
+            self.navigationController?.show(MultipleNumberViewController.init(), sender: sender)
+        case "imageView":
+            self.navigationController?.show(ImageViewController.init(), sender: sender)
+        case "datePicker":
+            self.navigationController?.show(DatePickerViewController.init(), sender: sender)
+        case "tableView":
+            self.navigationController?.show(TableViewController.init(), sender: sender)
+        default:
+            print("default")
+        }
     }
-
-    @objc func navigationMultipleNumber(sender:UIButton) {
-        self.navigationController?.show(MultipleNumberViewController.init(), sender: sender)
-    }
-
-    @objc func navigationImageView(sender:UIButton) {
-        self.navigationController?.show(ImageViewController.init(), sender: sender)
-    }
-
 }
-

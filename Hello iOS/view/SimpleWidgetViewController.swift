@@ -35,12 +35,23 @@ class SimpleWidgetViewController : UIViewController {
         textView.backgroundColor = .red
         view.addSubview(textView)
         
-        let button:UIButton = UIButton(frame: CGRect(x:0,y:300,width: 100,height: 30))
+        let button:UIButton = UIButton(frame: CGRect(x:0,y:200,width: 100,height: 30))
         button.setTitle("button", for: .normal)
         button.backgroundColor = .blue
         button.setTitleColor(.red, for: .normal)
         button.addTarget(self, action: #selector(tapped), for: .touchUpInside)
         view.addSubview(button)
+        
+        
+        let switchWidget:UISwitch = UISwitch(frame: CGRect(x:0,y:230,width: 40,height: 40))
+        view.addSubview(switchWidget)
+        
+        let sliderWidget:UISlider = UISlider(frame: CGRect(x:0,y:270,width: 300,height: 30))
+        view.addSubview(sliderWidget)
+        
+        let progressWidget:UIProgressView = UIProgressView(frame: CGRect(x: 0, y: 300, width: 300, height: 30))
+        progressWidget.progress = 0.5
+        view.addSubview(progressWidget)
     }
     
     @objc func tapped(sender:UIButton) {

@@ -19,6 +19,8 @@
 		1AE0CA9D288A7C69001AB28C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0CA9C288A7C69001AB28C /* ImageViewController.swift */; };
 		1AE0CA9F288A7C83001AB28C /* MultipleNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0CA9E288A7C83001AB28C /* MultipleNumberViewController.swift */; };
 		1AE0CAA1288A7CA2001AB28C /* SimpleWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0CAA0288A7CA2001AB28C /* SimpleWidgetViewController.swift */; };
+		1AE0CAA3288A8079001AB28C /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0CAA2288A8079001AB28C /* DatePickerViewController.swift */; };
+		1AE0CAA7288A92DB001AB28C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0CAA6288A92DB001AB28C /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		1AE0CA9C288A7C69001AB28C /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		1AE0CA9E288A7C83001AB28C /* MultipleNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleNumberViewController.swift; sourceTree = "<group>"; };
 		1AE0CAA0288A7CA2001AB28C /* SimpleWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidgetViewController.swift; sourceTree = "<group>"; };
+		1AE0CAA2288A8079001AB28C /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		1AE0CAA6288A92DB001AB28C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				1AE0CA9C288A7C69001AB28C /* ImageViewController.swift */,
 				1AE0CA9E288A7C83001AB28C /* MultipleNumberViewController.swift */,
 				1AE0CAA0288A7CA2001AB28C /* SimpleWidgetViewController.swift */,
+				1AE0CAA2288A8079001AB28C /* DatePickerViewController.swift */,
+				1AE0CAA6288A92DB001AB28C /* TableViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -277,6 +283,8 @@
 			files = (
 				1AE0CAA1288A7CA2001AB28C /* SimpleWidgetViewController.swift in Sources */,
 				1AE0CA9F288A7C83001AB28C /* MultipleNumberViewController.swift in Sources */,
+				1AE0CAA3288A8079001AB28C /* DatePickerViewController.swift in Sources */,
+				1AE0CAA7288A92DB001AB28C /* TableViewController.swift in Sources */,
 				1AE0CA6A288A7A89001AB28C /* ViewController.swift in Sources */,
 				1AE0CA66288A7A89001AB28C /* AppDelegate.swift in Sources */,
 				1AE0CA9D288A7C69001AB28C /* ImageViewController.swift in Sources */,
