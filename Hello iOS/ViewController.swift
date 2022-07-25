@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let pages = ["simpleWidget","multipleNumber","imageView","datePicker","tableView"]
+    let pages = ["simpleWidget","multipleNumber","imageView","datePicker","tableView","alert"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +48,8 @@ class ViewController: UIViewController {
             self.navigationController?.show(DatePickerViewController.init(), sender: sender)
         case "tableView":
             self.navigationController?.show(TableViewController.init(), sender: sender)
+        case "alert":
+            self.navigationController?.show(AlertViewController.init(), sender: sender)
         default:
             print("default")
         }
